@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { Action, Dispatch } from "redux";
-import Home from "components/home/Home";
+import ChangeSeating from "components/changeSeating/ChangeSeating";
 import { rootReducer } from "store";
 
 const mapStateToProps = (state: ReturnType<typeof rootReducer>) => {
@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch: Dispatch<Action<string>>) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(ChangeSeating);
 
 type StateProps = ReturnType<typeof mapStateToProps>;
 type DispatchProps = ReturnType<typeof mapDispatchToProps>;

@@ -1,11 +1,11 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-import Home from "./home/HomeCont";
+import MyTab from "./tab/TabCont";
 
 const Routes: React.FC = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={MyTab} />
       {/* <Route>404のっとふぁうんど</Route> */}
       <Redirect to="/" />
     </Switch>
